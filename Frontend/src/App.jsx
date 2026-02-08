@@ -1,7 +1,7 @@
 import './App.css'
-import Header from './components/Header'
-import Body from './components/Body'
-import Footer from './components/Footer'
+import Header from "./Components/Header"
+import Body from './Components/Body'
+import Footer from './Components/Footer'
 import { Routes, Route, Outlet, Navigate} from "react-router-dom";
 import Error from './Pages/Error';
 import Contact from './Pages/Contact';
