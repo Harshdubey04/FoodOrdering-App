@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Dark theme Configuration */
+
+body.dark {
+  background-color: #0f1115; /* or any dark background */
+  color: #e5e7eb; /* default text color for dark mode */
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+
