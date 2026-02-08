@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import useRestCard from '../utils/useRestCard';
 import OfflineGame from './OfflineGames';
-import { Theme } from '../Contexts/ThemeContext.jsx';
+import { Theme } from '../Contexts/ThemeContext';
 import { FaStar } from "react-icons/fa";
 
 const Body = () => {
