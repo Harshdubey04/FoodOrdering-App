@@ -13,7 +13,7 @@ import Login from './Pages/Login';
 import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './utils/Firebase';
-import { addUser, removeUser } from './Utils/Store/userSlice';
+import { addUser, removeUser } from './utils/Store/userSlice';
 import { useState } from 'react';
 
 const Grocery = lazy(() => import("./Pages/Grocery"));

@@ -28,7 +28,7 @@ const RestMenu = () => {
         }
     }, [restMenu]);
 
-    if (restMenu === null)
+    if (!restMenu)
         return <Spinner className={`${theme === "dark" ? "text-white" : ""}`} />
 
     const groupedCard = restMenu?.cards?.find(card => card?.groupedCard)?.groupedCard;
