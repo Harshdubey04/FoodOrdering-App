@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import Card from './Card.jsx';
-import Spinner from './Spinner.jsx';
+import Card from './Card';
+import Spinner from './Spinner';
 import { NavLink } from 'react-router-dom';
-import useOnlineStatus from '../utils/useOnlineStatus.js';
-import useRestCard from '../utils/useRestCard.js';
-import OfflineGame from './OfflineGames.jsx';
+import useOnlineStatus from '../utils/useOnlineStatus';
+import useRestCard from '../utils/useRestCard';
+import OfflineGame from './OfflineGames';
 import { Theme } from '../Contexts/ThemeContext.jsx';
 import { FaStar } from "react-icons/fa";
 

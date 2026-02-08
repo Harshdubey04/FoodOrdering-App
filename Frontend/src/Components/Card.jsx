@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { CDN_URL } from '../utils/constant.js';
-import { Theme } from '../Contexts/ThemeContext.jsx';
+import { CDN_URL } from '../utils/constant';
+import { Theme } from '../Contexts/ThemeContext';
 
 const Card = (props) => {
 
