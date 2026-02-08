@@ -10,7 +10,7 @@ const useRestMenu = (restid) => {
         fetchMenu();
     },[restid,restMenu]);
     const fetchMenu=async ()=>{
-      const data=await fetch(`http://localhost:5000/api/menu/${restid}?lat=28.7040592&lng=77.1024902`);
+      const data=await fetch(`${import.meta.env.VITE_API_URL}/api/menu/${restid}?lat=28.7040592&lng=77.1024902`);
       const json = await data.json();  
       dispatch(addRestaurantMenu({restid,menu:json.data})) 
     }

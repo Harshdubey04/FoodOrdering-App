@@ -16,12 +16,8 @@ const useRestCard = () => {
   const restData=useSelector(store=>store.restaurant.list);
   
   const fetchData=async()=>{
-    let data=await fetch("http://localhost:5000/api/restaurants?lat=28.7040592&lng=77.1024902");
+    let data=await fetch(`${import.meta.env.VITE_API_URL}/api/restaurants?lat=28.7040592&lng=77.1024902`);
     let json=await data.json();
-    // setRestData(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    // setfilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    // const restaurants =
-    //   json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     const cards = json?.data?.cards || [];
     const restaurantCard = cards.find(
       (card) =>
