@@ -1,4 +1,4 @@
-import UserClass from "../Components/userClass";
+import UserClass from "../Components/UserClass";
 import React from "react";
 import { Theme } from "../Contexts/ThemeContext";
 
