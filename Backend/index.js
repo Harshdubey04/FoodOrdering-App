@@ -5,12 +5,14 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
+const PORT = process.env.PORT || 5000;
+
 const HEADERS = {
   "User-Agent": "Mozilla/5.0",
   Accept: "application/json"
 };
 
-// 🔥 RESTAURANT LIST API
+//  RESTAURANT LIST API
 app.get("/api/restaurants", async (req, res) => {
   const { lat, lng } = req.query;
 
@@ -22,9 +24,9 @@ app.get("/api/restaurants", async (req, res) => {
           lat,
           lng,
           "is-seo-homepage-enabled": true,
-          page_type: "DESKTOP_WEB_LISTING"
+          page_type: "DESKTOP_WEB_LISTING",
         },
-        headers: HEADERS
+        headers: HEADERS,
       }
     );
 
@@ -34,7 +36,7 @@ app.get("/api/restaurants", async (req, res) => {
   }
 });
 
-// 🔥 RESTAURANT MENU API
+//  RESTAURANT MENU API
 app.get("/api/menu/:restId", async (req, res) => {
   const { restId } = req.params;
   const { lat, lng } = req.query;
@@ -48,9 +50,9 @@ app.get("/api/menu/:restId", async (req, res) => {
           "complete-menu": true,
           lat,
           lng,
-          restaurantId: restId
+          restaurantId: restId,
         },
-        headers: HEADERS
+        headers: HEADERS,
       }
     );
 
@@ -60,6 +62,6 @@ app.get("/api/menu/:restId", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Backend running at http://localhost:5000");
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
