@@ -1,11 +1,11 @@
 import React, { useState, useRef, useContext, useEffect } from 'react';
-import { checkValidSignInData, checkValidSignUpData } from '../Utils/Validate';
+import { checkValidSignInData, checkValidSignUpData } from '../utils/Validate';
 import {createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile} from "firebase/auth";
 import { auth } from "../utils/Firebase";
 import { PROFILE_PHOTO } from "../utils/constant";
 import LoginHeader from '../Components/LoginHeader';
 import { replace, useNavigate } from 'react-router';
-import { addUser } from '../Utils/Store/userSlice';
+import { addUser } from '../utils/Store/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Theme } from '../Contexts/ThemeContext';
 

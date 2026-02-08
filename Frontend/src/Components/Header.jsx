@@ -8,7 +8,7 @@ import { Theme } from '../Contexts/ThemeContext';
 import { MdDarkMode, MdMenu, MdClose } from "react-icons/md";
 import { signOut } from "firebase/auth";
 import { auth } from "../utils/Firebase";
-import { removeUser } from "../Utils/Store/userSlice";
+import { removeUser } from "../utils/Store/userSlice";
 import { emptyItem } from '../utils/Store/cartSlice';
 
 const Header = () => {
