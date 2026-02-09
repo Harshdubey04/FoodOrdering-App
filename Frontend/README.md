@@ -6,14 +6,14 @@ This project focuses on real-world frontend architecture, state management, and 
 ---
 
 ##  Live Demo
-🔗 https://your-deployed-link.com
+🔗 https://food-ordering-app-azure-delta.vercel.app
 
-## 📂 GitHub Repository
-🔗 https://github.com/your-username/your-repo-name
+##  GitHub Repository
+🔗 https://github.com/Harshdubey04/FoodOrdering-App
 
 ---
 
-## ✨ Features
+##  Features
 
 - Live restaurant & menu data (Swiggy API)
 - Search restaurants by name
@@ -25,21 +25,25 @@ This project focuses on real-world frontend architecture, state management, and 
 - Fully responsive (mobile-first design)
 - Offline detection with interactive offline screen
 - Loading spinner during API fetch
+- Firebase Authentication
+---
+
+##  Learning Highlights
+
+- Global state management using **Redux Toolkit**.
+- Custom React hooks (`useOnlineStatus`, `useRestCard`).
+- Handling async flows (API fetch, loading states, mock payment).
+- Conditional rendering based on network status.
+- Responsive UI using Tailwind CSS.
+- Clean and scalable component architecture.
+- Building production-style React applications.
+- Firebase authentication integration.
+- Handling CORS using a backend proxy.
+- Network status handling (online/offline UX).
 
 ---
 
-## 🧠 Learning Highlights
-
-- Global state management using **Redux Toolkit**
-- Custom React hooks (`useOnlineStatus`, `useRestCard`)
-- Handling async flows (API fetch, loading states, mock payment)
-- Conditional rendering based on network status
-- Responsive UI using Tailwind CSS
-- Clean and scalable component architecture
-
----
-
-## 🧩 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React
