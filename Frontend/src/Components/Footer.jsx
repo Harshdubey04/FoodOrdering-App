@@ -21,7 +21,7 @@ const Footer = () => {
       <div className='flex items-center gap-1 text-center sm:text-left'>
         <FaRegCopyright className={`${theme==="dark"?"text-gray-300":""}`} />
         <p className={`font-bold ${theme==="dark"?"text-gray-100":"text-black"}`}>
-          Copyright reserved to Harsh
+          Copyright reserved at Harsh
         </p>
       </div>
 
