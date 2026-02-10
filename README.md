@@ -61,8 +61,7 @@ This project focuses on real-world frontend architecture, state management, and 
 ---
 
 ## 🛠️ Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+1. Clone the repository:"https://github.com/Harshdubey04/FoodOrdering-App"
 2. Navigate to the project directory
 3. Install dependencies
 4. Start the development server (use npm run dev)
